@@ -1,5 +1,9 @@
 <nav class="main-menu">
-  <ul class="menu-bar menu-row">
+  <div class="menu-title">
+    <a href="#">APP TITLE</a>
+  </div>
+
+  <ul class="menu-nav menu-row">
     <li class="menu-item">
       <a class="menu-link" href="#">Home</a>
     </li>

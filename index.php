@@ -17,5 +17,7 @@ require 'Classes/configuration.php';
     <header>
       <?php include 'Components/nav.php'; ?>
     </header>
+
+    <?php include 'Components/footer.php'; ?>
   </body>
 </html>
