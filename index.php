@@ -11,12 +11,18 @@ require 'Classes/configuration.php';
     <!-- Insert stylesheets you need -->
     <link rel="stylesheet" href="/CSS/overall.css" />
     <link rel="stylesheet" href="/CSS/nav.css" />
+    <link rel="stylesheet" href="/CSS/section.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
   </head>
 
   <body>
     <header>
       <?php include 'Components/nav.php'; ?>
     </header>
+
+    <section>
+      <?php include 'Components/section.php'; ?>
+    </section>
 
     <?php include 'Components/footer.php'; ?>
   </body>
