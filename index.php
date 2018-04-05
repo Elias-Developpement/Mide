@@ -2,7 +2,8 @@
 // Insert external framework that you need
 
 // Load advanced_configuration.php if you need to insert specific host / database name / username / password
-require 'Classes/configuration.php';
+require 'Classes/advanced_configuration.php';
+$configuration = new AdvancedConfiguration("localhost", "mide", "root", "root");
 ?>
 
 <?php include 'Components/head.php'; ?>
