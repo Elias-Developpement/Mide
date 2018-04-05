@@ -37,3 +37,174 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Forms */
+
+.result {
+  display: block;
+  width: 50%;
+  line-height: 40px;
+  padding: 20px;
+  margin: 20px auto;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  padding-bottom: 20px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px 5px 0 0;
+}
+
+.form-title > h4 {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.form-left {
+  display: block;
+  width: 30%;
+
+  text-align: left;
+}
+
+.form-right {
+  display: block;
+  width: 70%;
+
+  text-align: right;
+}
+
+.information {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 0 10px;
+  border: 1px solid #FF363E;
+}
+
+.information > p {
+  color: #fff;
+}
+
+input[type="text"], input[type="mail"], input[type="password"], input[type="email"], input[type="number"] {
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+  padding: 0px 10px;
+
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+textarea {
+  width: 80%;
+  height: 160px;
+  margin: 10px auto;
+  padding: 10px;
+
+  font-size: 1em;
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  resize: none;
+}
+
+select {
+  width: calc(80% + 22px);
+  height: 42px;
+  margin: 10px auto;
+  padding: 0px 10px;
+
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+option {
+  color: black;
+}
+
+input[type="submit"] {
+  width: calc(100% + 24px);
+  height: 44px;
+  margin: 10px auto;
+
+  font-size: 1em;
+  background-color:#FF363E;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #db3037;
+}
+
+button {
+  width: 250px;
+  height: 44px;
+  margin: 30px auto;
+
+  font-size: 1em;
+  background-color:#FF363E;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:disabled {
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button:disabled:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #db3037;
+}

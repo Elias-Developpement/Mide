@@ -81,8 +81,8 @@ class Registration {
   }
 
   public function createAccount() {
-    $req_create_player = $this->_database->prepare('INSERT INTO membres (username, email, pass) VALUES (?, ?, ?)');
-    $req_create_player->execute(array($this->_username, $this->_email, $this->_pass));
+    $req_create_player = $this->_database->prepare('INSERT INTO users (username, password, email) VALUES (?, ?, ?)');
+    $req_create_player->execute(array($this->_username, $this->_pass, $this->_email));
 
     $this->_response = "Your account has been created ! Confirm it now !";
   }
