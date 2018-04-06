@@ -14,6 +14,14 @@ if(isset($_POST['login'])) {
     <h4>Log in</h4>
   </div>
 
+  <?php
+  if(isset($connection) && $connection->response() != "") {
+  ?>
+  <p><?= $connection->response() ?></p>
+  <?php
+  }
+  ?>
+
   <div class="form-row">
     <div class="form-left">
       <label>Username : </label>

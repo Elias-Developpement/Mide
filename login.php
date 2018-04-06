@@ -3,6 +3,8 @@
 
 // Load advanced_configuration.php if you need to insert specific host / database name / username / password
 require 'Classes/advanced_configuration.php';
+require 'Classes/connection.php';
+
 $configuration = new AdvancedConfiguration("localhost", "mide", "root", "root");
 ?>
 

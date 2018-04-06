@@ -3,6 +3,7 @@ if(isset($_POST['register'])) {
   $data = [
     'username' => htmlspecialchars($_POST['username']),
     'password' => htmlspecialchars($_POST['password']),
+    'password2' => htmlspecialchars($_POST['password2']),
     'email' => htmlspecialchars($_POST['email'])
   ];
 
@@ -14,6 +15,14 @@ if(isset($_POST['register'])) {
   <div class="form-title">
     <h4>Register</h4>
   </div>
+
+  <?php
+  if(isset($registration) && $registration->response() != "") {
+  ?>
+  <p><?= $registration->response() ?></p>
+  <?php
+  }
+  ?>
 
   <div class="form-row">
     <div class="form-left">
