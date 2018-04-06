@@ -4,6 +4,7 @@ class Connection {
           $_id,
           $_username,
           $_password,
+          $_email,
           $_response;
 
   public function __construct($data, $database) {
@@ -14,7 +15,6 @@ class Connection {
     if(self::getConnection()) {
       $_SESSION['id'] = $this->_id;
       $_SESSION['username'] = $this->_username;
-      $_SESSION['email'] = $this->_email;
 
       header('Location: index.php');
     }
@@ -23,19 +23,19 @@ class Connection {
     }
   }
 
-  public function username() {
+  public function username():string {
     return $this->_username;
   }
 
-  public function password() {
+  public function password():string {
     return $this->_password;
   }
 
-  public function response() {
+  public function response():string {
     return $this->_response;
   }
 
-  public function getConnection() {
+  public function getConnection():bool {
     $req_check_username_exist = $this->_database->prepare('SELECT * FROM users WHERE username = ?');
     $req_check_username_exist->execute(array($this->_username));
 
@@ -44,6 +44,7 @@ class Connection {
     if($check_username_exist) {
       if(password_verify($this->_password, $check_username_exist['password'])) {
         $this->_id = $check_username_exist['id'];
+        $this->_email = $check_username_exist['email'];
 
         return true;
       }

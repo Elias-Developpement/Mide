@@ -5,15 +5,15 @@
 
   <ul class="menu-nav menu-row">
     <li class="menu-item">
-      <a class="menu-link" href="#">Home</a>
+      <a class="menu-link" href="index.php">Home</a>
     </li>
 
     <li class="menu-item">
-      <a class="menu-link" href="#">Docs</a>
+      <a class="menu-link" href="login.php">Log in</a>
     </li>
 
     <li class="menu-item">
-      <a class="menu-link" href="#">Contact</a>
+      <a class="menu-link" href="register.php">Register</a>
     </li>
   </ul>
 </nav>

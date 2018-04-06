@@ -7,7 +7,7 @@ $configuration = new AdvancedConfiguration("localhost", "mide", "root", "root");
 ?>
 
 <?php include 'Components/head.php'; ?>
-    <title>NAME OF YOUR APP - Login</title>
+    <title>NAME OF YOUR APP - Register</title>
 
     <!-- Insert stylesheets you need -->
     <link rel="stylesheet" href="/CSS/overall.css" />
@@ -22,7 +22,7 @@ $configuration = new AdvancedConfiguration("localhost", "mide", "root", "root");
     </header>
 
     <section>
-      <?php include 'Components/login_form.php'; ?>
+      <?php include 'Components/register_form.php'; ?>
     </section>
 
     <?php include 'Components/footer.php'; ?>

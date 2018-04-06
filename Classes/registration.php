@@ -3,7 +3,7 @@ class Registration {
   private $_database,
           $_username,
           $_email,
-          $_pass,
+          $_password,
           $_response;
 
   public function __construct($data, $database) {
@@ -11,7 +11,7 @@ class Registration {
 
     if(self::setUsername($data['username'])) {
       if(self::setEmail($data['email'])) {
-        if(self::setPass($data['pass'], $data['pass2'])) {
+        if(self::setPass($data['password'], $data['password2'])) {
           self::createAccount();
         }
         else {
@@ -27,27 +27,23 @@ class Registration {
     }
   }
 
-  public function username() {
+  public function username():string {
     return $this->_username;
   }
 
-  public function email() {
+  public function email():string {
     return $this->_email;
   }
 
-  public function pass() {
-    return $this->_pass;
+  public function password():string {
+    return $this->_password;
   }
 
-  public function pass2() {
-    return $this->_pass2;
-  }
-
-  public function response() {
+  public function response():string {
     return $this->_response;
   }
 
-  public function setUsername($username) {
+  public function setUsername($username):bool {
     if(strlen($username) > 2 && strlen($username) <= 20) {
       $this->_username = $username;
       return true;
@@ -55,7 +51,7 @@ class Registration {
     return false;
 }
 
-  public function setEmail($email) {
+  public function setEmail($email):bool {
     $req_check_email_exist = $this->_database->prepare('SELECT * FROM users WHERE email = ?');
     $req_check_email_exist->execute(array($email));
 
@@ -71,7 +67,7 @@ class Registration {
     return false;
   }
 
-  public function setPass($pass, $pass2) {
+  public function setPass($pass, $pass2):bool {
     if($pass === $pass2) {
       $this->_pass = password_hash($pass, PASSWORD_DEFAULT);
       return true;
@@ -80,7 +76,7 @@ class Registration {
     return false;
   }
 
-  public function createAccount() {
+  public function createAccount():void {
     $req_create_player = $this->_database->prepare('INSERT INTO users (username, password, email) VALUES (?, ?, ?)');
     $req_create_player->execute(array($this->_username, $this->_pass, $this->_email));
 
