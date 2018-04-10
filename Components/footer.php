@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="footer-bottom">
   <div class="row-sections white">
     <div class="section">
       <h4>Section title</h4>
