@@ -6,3 +6,8 @@ Mide is an powerfull framework. You'll never need to re-created basics and width
 Feel free to use Mide.
 Copyright. All rights reserved. 2018 
 Don't copy the code please.
+
+## Create a new project
+
+You can create a new project with git thanks to the following line :
+git clone https://github.com/Elias-Developpement/Mide.git
