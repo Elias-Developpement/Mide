@@ -28,7 +28,7 @@ if(isset($_POST['login'])) {
     </div>
 
     <div class="form-right">
-      <input type="text" name="username" placeholder="Username" value="" required>
+      <input class="form-item" type="text" name="username" placeholder="Username" value="" required>
     </div>
   </div>
 
@@ -38,11 +38,11 @@ if(isset($_POST['login'])) {
     </div>
 
     <div class="form-right">
-      <input type="password" name="password" placeholder="Password" value="" required>
+      <input class="form-item" type="password" name="password" placeholder="Password" value="" required>
     </div>
   </div>
 
   <div class="form-row">
-    <input type="submit" name="login" value="Log in">
+    <input class="form-submit" type="submit" name="login" value="Log in">
   </div>
 </form>

@@ -30,7 +30,7 @@ if(isset($_POST['register'])) {
     </div>
 
     <div class="form-right">
-      <input type="text" name="username" placeholder="Username" value="" required>
+      <input class="form-item" type="text" name="username" placeholder="Username" value="" required>
     </div>
   </div>
 
@@ -40,7 +40,7 @@ if(isset($_POST['register'])) {
     </div>
 
     <div class="form-right">
-      <input type="password" name="password" placeholder="Password" value="" required>
+      <input class="form-item" type="password" name="password" placeholder="Password" value="" required>
     </div>
   </div>
 
@@ -50,7 +50,7 @@ if(isset($_POST['register'])) {
     </div>
 
     <div class="form-right">
-      <input type="password" name="password2" placeholder="Confirm password" value="" required>
+      <input class="form-item" type="password" name="password2" placeholder="Confirm password" value="" required>
     </div>
   </div>
 
@@ -60,11 +60,11 @@ if(isset($_POST['register'])) {
     </div>
 
     <div class="form-right">
-      <input type="mail" name="email" placeholder="Email" value="" required>
+      <input class="form-item" type="mail" name="email" placeholder="Email" value="" required>
     </div>
   </div>
 
   <div class="form-row">
-    <input type="submit" name="register" value="Register">
+    <input class="form-submit" type="submit" name="register" value="Register">
   </div>
 </form>

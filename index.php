@@ -10,7 +10,7 @@ $configuration = new AdvancedConfiguration("localhost", "mide", "root", "root");
     <title>NAME OF YOUR APP</title>
 
     <!-- Insert stylesheets you need -->
-    <link rel="stylesheet" href="/CSS/overall.css" />
+    <link rel="stylesheet" href="/CSS/mide.css" />
   </head>
 
   <body>
