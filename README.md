@@ -13,5 +13,5 @@ Don't copy the code please.
 You can create a new project with git thanks to the following line :
 
 ```sh
-git clone https://github.com/Elias-Developpement/Mide.git
+git clone https://github.com/Elias-Developpement/Mide
 ```
